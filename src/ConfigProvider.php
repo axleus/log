@@ -43,9 +43,9 @@ class ConfigProvider
                 Processor\RamseyUuidProcessor::class => Processor\RamseyUuidProcessor::class,
             ],
             'factories'  => [
-                LoggerInterface::class   => Container\LogFactory::class,
-                Middleware\MonologMiddleware::class => Middleware\MonologMiddlewareFactory::class,
-                Repository\RepositoryHandler::class => Repository\RepositoryHandlerFactory::class,
+                LoggerInterface::class                => Container\LogFactory::class,
+                Middleware\MonologMiddleware::class   => Middleware\MonologMiddlewareFactory::class,
+                Repository\RepositoryHandler::class   => Repository\RepositoryHandlerFactory::class,
                 Processor\LaminasI18nProcessor::class => Processor\LaminasI18nProcessorFactory::class,
             ],
         ];
